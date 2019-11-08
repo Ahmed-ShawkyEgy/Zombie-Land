@@ -38,10 +38,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5656783389584870252}
     m_Modifications:
-    - target: {fileID: 103692, guid: a6f75ae2198bd1e47b95c317412b3ef3, type: 3}
-      propertyPath: m_Name
-      value: axe
-      objectReference: {fileID: 0}
     - target: {fileID: 486550, guid: a6f75ae2198bd1e47b95c317412b3ef3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.185
@@ -98,6 +94,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.3000002
       objectReference: {fileID: 0}
+    - target: {fileID: 103692, guid: a6f75ae2198bd1e47b95c317412b3ef3, type: 3}
+      propertyPath: m_Name
+      value: axe
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6f75ae2198bd1e47b95c317412b3ef3, type: 3}
 --- !u!1001 &2148163130584082197
@@ -107,16 +107,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3701113641084129642}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: cc000a3c2aaa10b4885f5019f79e0759,
-        type: 3}
-      propertyPath: m_Name
-      value: Ch18_nonPBR@Idle
-      objectReference: {fileID: 0}
-    - target: {fileID: -6057140222963153312, guid: cc000a3c2aaa10b4885f5019f79e0759,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 4b419bf1337484943b3e6c82ea6d237a, type: 2}
     - target: {fileID: -4216859302048453862, guid: cc000a3c2aaa10b4885f5019f79e0759,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -172,6 +162,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: cc000a3c2aaa10b4885f5019f79e0759,
+        type: 3}
+      propertyPath: m_Name
+      value: Ch18_nonPBR@Idle
+      objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: cc000a3c2aaa10b4885f5019f79e0759,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 4b419bf1337484943b3e6c82ea6d237a, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc000a3c2aaa10b4885f5019f79e0759, type: 3}
 --- !u!4 &6392149605040491535 stripped
@@ -199,14 +199,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2956487496665110711}
     m_Modifications:
-    - target: {fileID: 1690370004738036, guid: f2b3bff7c9d735441b445bb19a2fe9cc, type: 3}
-      propertyPath: m_Name
-      value: Handgun_M1911A_Steel
-      objectReference: {fileID: 0}
-    - target: {fileID: 1690370004738036, guid: f2b3bff7c9d735441b445bb19a2fe9cc, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4878850369403266, guid: f2b3bff7c9d735441b445bb19a2fe9cc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.0069836285
@@ -262,6 +254,10 @@ PrefabInstance:
     - target: {fileID: 4878850369403266, guid: f2b3bff7c9d735441b445bb19a2fe9cc, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.20000027
+      objectReference: {fileID: 0}
+    - target: {fileID: 1690370004738036, guid: f2b3bff7c9d735441b445bb19a2fe9cc, type: 3}
+      propertyPath: m_Name
+      value: Handgun_M1911A_Steel
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f2b3bff7c9d735441b445bb19a2fe9cc, type: 3}
