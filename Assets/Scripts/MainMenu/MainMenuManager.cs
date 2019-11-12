@@ -22,4 +22,9 @@ public class MainMenuManager : MonoBehaviour
         SceneManager.LoadScene("SampleScene"); // FIXME: Change to the scene's name whenever edited.
     }
 
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
 }
