@@ -6,6 +6,8 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField]
     private GameObject axe, gun;
+    [SerializeField]
+    private ParticleSystem gunFire;
     private bool isHoldingAxe, isHoldingGun;
 
     private void Start()
@@ -30,5 +32,8 @@ public class PlayerController : MonoBehaviour
         isHoldingGun = true;
     }
 
-
+    public void PlayFire()
+    {
+        gunFire.Play();
+    }
 }
