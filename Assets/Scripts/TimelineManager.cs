@@ -19,6 +19,11 @@ public class TimelineManager : Singleton<TimelineManager>
         }
     }
 
+    public void PlayGunFight1()
+    {
+        gunFightDir1.Play();
+    }
+
     void OnDisable()
     {
         introDir.stopped -= OnPlayableDirectorStopped;
