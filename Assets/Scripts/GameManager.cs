@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameManager : Singleton<GameManager>
 {
-    public GameObject weponChoice, helpChoice;
+    public GameObject weponChoice, helpGunChoice;
     public PlayerController player;    
 
 
@@ -20,12 +20,12 @@ public class GameManager : Singleton<GameManager>
 
     public void showHelpChoice()
     {
-        helpChoice.SetActive(true);
+        helpGunChoice.SetActive(true);
     }
 
     public void closeHelpChoice()
     {
-        helpChoice.SetActive(false);
+        helpGunChoice.SetActive(false);
     }
 
 }
