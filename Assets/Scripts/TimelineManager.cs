@@ -10,6 +10,7 @@ public class TimelineManager : Singleton<TimelineManager>
     {
         introDir.stopped += OnPlayableDirectorStopped;
         gunFightDir1.stopped += OnPlayableDirectorStopped;
+        axeFightDir1.stopped += OnPlayableDirectorStopped;
     }
 
     void OnPlayableDirectorStopped(PlayableDirector aDirector)
@@ -18,10 +19,19 @@ public class TimelineManager : Singleton<TimelineManager>
         {
             GameManager.Instance.showWeponChoice();
         }
-        else if(gunFightDir1 == aDirector)
+        else if (gunFightDir1 == aDirector)
         {
             GameManager.Instance.showHelpChoice();
         }
+        else if (axeFightDir1 == aDirector)
+        {
+            GameManager.Instance.showHelpChoiceWithAxe();
+        }
+    }
+
+    public void PlayAxeFight()
+    {
+        axeFightDir1.Play();
     }
 
     public void PlayGunFight()
@@ -43,5 +53,6 @@ public class TimelineManager : Singleton<TimelineManager>
     {
         introDir.stopped -= OnPlayableDirectorStopped;
         gunFightDir1.stopped -= OnPlayableDirectorStopped;
+        axeFightDir1.stopped -= OnPlayableDirectorStopped;
     }
 }
