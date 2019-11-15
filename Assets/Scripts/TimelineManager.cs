@@ -4,13 +4,14 @@ using UnityEngine.Playables;
 
 public class TimelineManager : Singleton<TimelineManager>
 {
-    public PlayableDirector introDir , gunFightDir1 , gunHelpDir, gunIgnoreDir, axeFightDir1 ;
+    public PlayableDirector introDir , gunFightDir1 , gunHelpDir, gunIgnoreDir, axeFightDir1, axeFightHelpDir ;
 
     void OnEnable()
     {
         introDir.stopped += OnPlayableDirectorStopped;
         gunFightDir1.stopped += OnPlayableDirectorStopped;
         axeFightDir1.stopped += OnPlayableDirectorStopped;
+        axeFightHelpDir.stopped += OnPlayableDirectorStopped;
     }
 
     void OnPlayableDirectorStopped(PlayableDirector aDirector)
@@ -49,10 +50,16 @@ public class TimelineManager : Singleton<TimelineManager>
         gunIgnoreDir.Play(); 
     }
 
+    public void PlayAxeFightHelp()
+    {
+        axeFightHelpDir.Play();
+    }
+
     void OnDisable()
     {
         introDir.stopped -= OnPlayableDirectorStopped;
         gunFightDir1.stopped -= OnPlayableDirectorStopped;
         axeFightDir1.stopped -= OnPlayableDirectorStopped;
+        axeFightHelpDir.stopped -= OnPlayableDirectorStopped;
     }
 }

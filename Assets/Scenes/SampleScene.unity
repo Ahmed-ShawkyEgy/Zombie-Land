@@ -1124,6 +1124,88 @@ Transform:
   m_Father: {fileID: 653547876}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &371609031
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 371609032}
+  - component: {fileID: 371609034}
+  - component: {fileID: 371609033}
+  m_Layer: 0
+  m_Name: Axe Help Fight Director
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &371609032
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 371609031}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 653547876}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &371609033
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 371609031}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!320 &371609034
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 371609031}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 076992e94a8bcad47b16835474432fc5, type: 2}
+  m_InitialState: 0
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: -5177631697249140895, guid: 076992e94a8bcad47b16835474432fc5, type: 2}
+    value: {fileID: 494541526}
+  - key: {fileID: -4416227187600355844, guid: 076992e94a8bcad47b16835474432fc5, type: 2}
+    value: {fileID: 3166231814558414394}
+  - key: {fileID: 1885901804270377620, guid: 076992e94a8bcad47b16835474432fc5, type: 2}
+    value: {fileID: 1277150197}
+  - key: {fileID: 5834305266167818867, guid: 076992e94a8bcad47b16835474432fc5, type: 2}
+    value: {fileID: 718781856}
+  - key: {fileID: 6091077519377177106, guid: 076992e94a8bcad47b16835474432fc5, type: 2}
+    value: {fileID: 3166231814558414394}
+  - key: {fileID: 8438665591178481026, guid: 076992e94a8bcad47b16835474432fc5, type: 2}
+    value: {fileID: 1277150197}
+  - key: {fileID: 3433375496222178358, guid: 076992e94a8bcad47b16835474432fc5, type: 2}
+    value: {fileID: 718781856}
+  m_ExposedReferences:
+    m_References: []
 --- !u!1001 &434161524
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1800,7 +1882,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1717278968}
-        m_MethodName: PlayGunHelpFight
+        m_MethodName: PlayAxeFightHelp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2395,6 +2477,7 @@ Transform:
   - {fileID: 657582041}
   - {fileID: 1047708951}
   - {fileID: 625010618}
+  - {fileID: 371609032}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2649,12 +2732,12 @@ PrefabInstance:
     - target: {fileID: 7426325942559668262, guid: a3c70aa6d31c4cd4e9defc482f015180,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.015378466
+      value: -0.015378469
       objectReference: {fileID: 0}
     - target: {fileID: 7426325942559668262, guid: a3c70aa6d31c4cd4e9defc482f015180,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.08652864
+      value: 0.08652866
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3c70aa6d31c4cd4e9defc482f015180, type: 3}
@@ -2695,7 +2778,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 726837202}
   m_LocalRotation: {x: 0.1628844, y: 0.016738156, z: -0.0027636988, w: 0.9864993}
-  m_LocalPosition: {x: 0.6837596, y: 2.65, z: 0.74248123}
+  m_LocalPosition: {x: 0, y: 2.65, z: -4.48}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 589556398}
@@ -3094,8 +3177,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: This boy has asked for your help in exchange for an energy drink that will
-    allow you to continue fighting
+  m_Text: This boy has asked for your help to clear out these zombies in exchange
+    for an energy drink that will allow you to continue fighting
 --- !u!222 &830177505
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3548,7 +3631,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 0.9864993}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.1264372, y: 1.82, z: 18.420002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -4283,12 +4366,12 @@ PrefabInstance:
     - target: {fileID: 7426325942559668262, guid: a3c70aa6d31c4cd4e9defc482f015180,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.015378466
+      value: -0.015378469
       objectReference: {fileID: 0}
     - target: {fileID: 7426325942559668262, guid: a3c70aa6d31c4cd4e9defc482f015180,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.08652864
+      value: 0.08652866
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3c70aa6d31c4cd4e9defc482f015180, type: 3}
@@ -4449,7 +4532,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: This boy has asked for your help in exchange for some ammo
+  m_Text: This boy has asked for your help to clear out the zombies in this area
+    in exchange for some ammo
 --- !u!222 &1310378636
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4699,7 +4783,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1464641810}
-  m_LocalRotation: {x: 0.06903947, y: 0.067137234, z: -0.0046568136, w: 0.9953414}
+  m_LocalRotation: {x: 0.00025515613, y: -0.9960952, z: 0.088238955, w: 0.0028803868}
   m_LocalPosition: {x: 0.012530095, y: 1.7471561, z: 1.9514432}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -5400,8 +5484,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1697660732}
-  m_LocalRotation: {x: 0.067860395, y: -4.362337e-19, z: 6.4135796e-18, w: 0.99769485}
-  m_LocalPosition: {x: 0.6837596, y: 2, z: 2.2224813}
+  m_LocalRotation: {x: 0.067860395, y: -3.600042e-10, z: 0.0000000052928426, w: 0.99769485}
+  m_LocalPosition: {x: 0, y: 2, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 282947878}
@@ -5498,6 +5582,7 @@ MonoBehaviour:
   gunHelpDir: {fileID: 657582042}
   gunIgnoreDir: {fileID: 1047708953}
   axeFightDir1: {fileID: 625010620}
+  axeFightHelpDir: {fileID: 371609034}
 --- !u!4 &1717278969
 Transform:
   m_ObjectHideFlags: 0
@@ -8257,12 +8342,12 @@ PrefabInstance:
     - target: {fileID: 7426325942559668262, guid: a3c70aa6d31c4cd4e9defc482f015180,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.015378464
+      value: -0.015378463
       objectReference: {fileID: 0}
     - target: {fileID: 7426325942559668262, guid: a3c70aa6d31c4cd4e9defc482f015180,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.08652862
+      value: 0.086528614
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3c70aa6d31c4cd4e9defc482f015180, type: 3}
