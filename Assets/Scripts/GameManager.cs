@@ -1,10 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : Singleton<GameManager>
 {
-    public GameObject weponChoice, helpGunChoice, helpAxeChoice;
+    public GameObject weponChoice, helpGunChoice, helpAxeChoice, die, gameOver;
     public PlayerController player;    
 
 
@@ -38,4 +39,20 @@ public class GameManager : Singleton<GameManager>
         helpAxeChoice.SetActive(false);
     }
 
+    public void showGameOver()
+    {
+        Time.timeScale = 0;
+        gameOver.SetActive(true);
+    }
+
+    public void showDie()
+    {
+        Time.timeScale = 0;
+        die.SetActive(true);
+    }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
 }
